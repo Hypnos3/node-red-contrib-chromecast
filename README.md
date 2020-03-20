@@ -36,7 +36,7 @@ These nodes are based on a fork of the node-red-contrib-chromecast. It is for st
 		- [Play local files](#play-local-files)
 		- [changing ip, url, contentType, streamType](#changing-ip-url-contenttype-streamtype)
 	- [Bugs and Feedback](#bugs-and-feedback)
-		- [:moneybag: Donations ![Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XDPSATTXBXHCL)](#moneybag-donations-donatehttpswwwpaypalcomcgi-binwebscrcmds-xclickhostedbuttonidxdpsattxbxhcl)
+		- [:moneybag: Donations ![Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XDPSATTXBXHCL)](#moneybag-donations-img-src%22httpswwwpaypalcomcgi-binwebscrcmds-xclickhostedbuttonidxdpsattxbxhcl%22-alt%22donate%22)
 	- [LICENSE](#license)
 	- [Other](#other)
 
@@ -330,8 +330,6 @@ CONDITIONS OF ANY KIND, either express or implied. See the License for the
 specific language governing permissions and limitations under the License.
 
 ## Other
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/Hypnos3/node-red-contrib-cast.svg)](https://greenkeeper.io/)
 
 this node is published also here:
   - [NPM package](https://www.npmjs.com/package/node-red-contrib-cast)
