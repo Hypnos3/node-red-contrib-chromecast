@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "q": "^1.5.0",
-    "castv2-client": "0.0.8",
+    "castv2-client": "1.1.2",
     "lodash": "^4.17.4",
     "needle": "^1.4.5"
   }
