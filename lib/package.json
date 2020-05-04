@@ -4,7 +4,9 @@
   "description": "youtube-castv2-client youtube sender supporting new protocol",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "youtube",
@@ -21,6 +23,8 @@
     "q": "^1.5.0",
     "castv2-client": "1.1.2",
     "lodash": "^4.17.4",
-    "needle": "^1.4.5"
-  }
+    "needle": "^1.4.5",
+    "snyk": "^1.317.0"
+  },
+  "snyk": true
 }
