@@ -14,7 +14,7 @@ These nodes are based on a fork of the node-red-contrib-chromecast. It is for st
 
 ![nodes](images/appearance1.png?raw=true)
 
-> This is still in development!
+> Because I no longer use this node myself, there is unfortunately only limited support.
 
 
 ## Table of contents
@@ -36,7 +36,7 @@ These nodes are based on a fork of the node-red-contrib-chromecast. It is for st
 		- [Play local files](#play-local-files)
 		- [changing ip, url, contentType, streamType](#changing-ip-url-contenttype-streamtype)
 	- [Bugs and Feedback](#bugs-and-feedback)
-		- [:moneybag: Donations ![Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XDPSATTXBXHCL)](#moneybag-donations-img-src%22httpswwwpaypalcomcgi-binwebscrcmds-xclickhostedbuttonidxdpsattxbxhcl%22-alt%22donate%22)
+		- [:moneybag: Donations ![Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XDPSATTXBXHCL)](#moneybag-donations-)
 	- [LICENSE](#license)
 	- [Other](#other)
 
