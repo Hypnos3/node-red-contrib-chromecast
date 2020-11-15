@@ -23,7 +23,9 @@
     "lint": "eslint \"./**/*.js\" \"./**/*.html\"",
     "predev": "npm i -g",
     "dev": "node-red -v",
-    "prepublishOnly": "eslint \"./**/*.js\" \"./**/*.html\""
+    "prepublishOnly": "eslint \"./**/*.js\" \"./**/*.html\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -71,7 +73,8 @@
   "dependencies": {
     "castv2-client": "^1.2.0",
     "google-tts-api": ">=0.0.5",
-    "bonjour": "^3.5.0"
+    "bonjour": "^3.5.0",
+    "snyk": "^1.427.0"
   },
   "devDependencies": {
     "camo-purge": "^1.0.2",
@@ -234,5 +237,6 @@
         "never"
       ]
     }
-  }
+  },
+  "snyk": true
 }
