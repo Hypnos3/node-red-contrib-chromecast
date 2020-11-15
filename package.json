@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-cast",
-  "version": "0.2.15",
+  "version": "0.2.16",
   "description": "NodeRED nodes to for Chromecast and Google Home",
   "keywords": [
     "node-red",
@@ -70,16 +70,16 @@
   },
   "dependencies": {
     "castv2-client": "^1.2.0",
-    "google-tts-api": ">=0.0.4",
+    "google-tts-api": ">=0.0.5",
     "bonjour": "^3.5.0"
   },
   "devDependencies": {
     "camo-purge": "^1.0.2",
-    "eslint": "^6.8.0",
-    "eslint-plugin-html": "^6.0.0",
-    "eslint-plugin-jsdoc": "^22.1.0",
-    "eslint-plugin-json": "^2.1.1",
-    "eslint-plugin-node": "^11.0.0"
+    "eslint": "^7.13.0",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-jsdoc": "^30.7.8",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-node": "^11.1.0"
   },
   "disabledSettings": {
     "plugins-disabled": [
