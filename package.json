@@ -74,7 +74,7 @@
     "castv2-client": "^1.2.0",
     "google-tts-api": ">=0.0.5",
     "bonjour": "^3.5.0",
-    "snyk": "^1.427.0"
+    "snyk": "^1.431.2"
   },
   "devDependencies": {
     "camo-purge": "^1.0.2",
