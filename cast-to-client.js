@@ -8,7 +8,7 @@ const DefaultMediaReceiver = require('castv2-client').DefaultMediaReceiver;
 // Const path = require('path');
 // const YoutubeMediaReceiver = require(path.join(__dirname, '/lib/Youtube.js')).Youtube;
 
-const googletts = require('google-tts-api');
+const googleTTS = require('google-tts-api');
 
 const isTrue = function(val) {
     val = (val+'').toLowerCase();
@@ -172,11 +172,12 @@ const addGenericMetadata = function (media, imageUrl, contentTitle) {
 };
 
 const getSpeechUrl = function (node, text, language, options, callback, msg) {
-    let speed = 1;
-    if (options && !isNaN(options.ttsSpeed)) {
-        speed = Number(options.ttsspeed);
-    }
-    googletts(text, language, speed).then(url => {
+    try {
+        const url = googleTTS.getAudioUrl(text, {
+            lang: language,
+            slow: options.slow, // speed (number) is changed to slow (boolean)
+            host: options.ttsHost || 'https://translate.google.com', // allow to change the host
+        });
         node.debug('returned tts media url=\'' + url + '\'');
         const media = {
             contentId: url,
@@ -187,9 +188,9 @@ const getSpeechUrl = function (node, text, language, options, callback, msg) {
         doCast(node, media, options, (res, data) => {
             callback(url, data);
         }, msg);
-    }).catch(err => {
+    } catch (err) {
         errorHandler(node, err, msg, 'Not able to get media file via google-tts', 'error in tts');
-    });
+    }
 };
 
 const doCast = function (node, media, options, callbackResult, msg) {
@@ -634,13 +635,13 @@ module.exports = function (RED) {
                 return;
             }
 
-            if (!googletts) {
+            if (!googleTTS) {
                 this.status({
                     fill: 'red',
                     shape: 'dot',
                     text: 'installation error'
                 });
-                done('googletts not defined!! - Installation Problem, Please reinstall!', msg);
+                done('googleTTS not defined!! - Installation Problem, Please reinstall!', msg);
                 return;
             }
             /********************************************
