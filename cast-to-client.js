@@ -176,7 +176,7 @@ const getSpeechUrl = function (node, text, language, options, callback, msg) {
         const url = googleTTS.getAudioUrl(text, {
             lang: language,
             slow: options.slow, // speed (number) is changed to slow (boolean)
-            host: options.ttsHost || 'https://translate.google.com', // allow to change the host
+            host: options.ttsHost || 'https://translate.google.com' // allow to change the host
         });
         node.debug('returned tts media url=\'' + url + '\'');
         const media = {
