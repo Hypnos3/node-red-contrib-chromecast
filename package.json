@@ -72,7 +72,7 @@
   },
   "dependencies": {
     "castv2-client": "^1.2.0",
-    "google-tts-api": ">=2.0.0",
+    "google-tts-api": ">=2.0.1",
     "bonjour": "^3.5.0",
     "snyk": "^1.434.3"
   },
