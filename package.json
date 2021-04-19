@@ -78,7 +78,7 @@
   },
   "devDependencies": {
     "camo-purge": "^1.0.2",
-    "eslint": "^7.15.0",
+    "eslint": "^7.24.0",
     "eslint-plugin-html": "^6.1.1",
     "eslint-plugin-jsdoc": "^30.7.8",
     "eslint-plugin-json": "^2.1.2",
